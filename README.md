@@ -1,48 +1,63 @@
+# 🎓 Django Student Portal
 
-# Django POS System
+A **simple student portal** built with Django.  
+👉 *Currently, only the **homepage** is working and serves as a demo layout for the full portal.*
 
-A Point of Sale system built with Django featuring role-based access for admin, manager, and teller users.
+---
 
-## Features
+## ✨ Features
 
-- User authentication with different roles
+- 🏠 **Homepage** with announcements, courses, grades, and upcoming schedule  
+- 🎨 **Responsive and clean web interface**  
+- 📂 **Static CSS and JavaScript support**  
 
-- Admin user management
+> 💡 More features such as authentication, dynamic data, and user dashboards are **planned for future development**.
 
-- Manager product management and sales reports
+---
 
-- Teller POS system with transaction processing
+## ⚙️ Installation
 
-- Responsive web interface
+1. **Clone the repository**
 
+2. **Create virtual environment**  
+   python -m venv env
 
+3. **Activate environment**
 
-## Installation
+Linux/Mac:
+source env/bin/activate
 
+Windows:
+env\Scripts\activate
 
+4. **Install requirements**
+pip install -r requirements.txt
 
-1. Clone the repository
+5. **Run migrations**
+python manage.py migrate
 
-2. Create virtual environment: `python -m venv env`
+6. **Run server**
+python manage.py runserver
 
-3. Activate environment: `source env/bin/activate` (Linux/Mac) or `env\Scripts\activate` (Windows)
-
-4. Install requirements: `pip install -r requirements.txt`
-
-5. Run migrations: `python manage.py migrate`
-
-6. Create superuser: `python manage.py createsuperuser`
-
-7. Run server: `python manage.py runserver`
-
-
-
-## Technology Stack
-
+7. **Open in browser**
+http://127.0.0.1:8000/
 
 
-- Django
+📂 Project Structure
+student_portal/
+├── announcements/
+│   ├── static/announcements/
+│   │   ├── styles.css
+│   │   └── script.js
+│   └── templates/announcements/
+│       └── home.html
+├── manage.py
+└── requirements.txt
 
-- SQLite (can be configured for other databases)
 
-- HTML/CSS/JavaScript
+🛠️ Technology Stack
+Django
+
+SQLite (default, can be configured for other databases)
+
+HTML / CSS / JavaScript
