@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Portal — Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 20px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 { margin-top: 0; }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Grades</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Welcome back, Student 👋</h2>
+      <p>Here’s your quick overview for today.</p>
+    </div>
+
+    <div class="card">
+      <h3>Announcements</h3>
+      <ul>
+        <li>Campus Wi‑Fi maintenance on Sep 24, 10PM – 1AM.</li>
+        <li>Scholarship applications open until Oct 10.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Your Courses</h3>
+      <ul>
+        <li>Mobile Development — Grade: A-</li>
+        <li>Database Systems — Grade: B+</li>
+        <li>Discrete Math — Grade: B</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Upcoming Schedule</h3>
+      <ul>
+        <li>Sep 24 — Mobile Dev Quiz</li>
+        <li>Sep 26 — DB Group Presentation</li>
+        <li>Sep 30 — Midterm Week Begins</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Student Portal — Demo Page
+  </footer>
+</body>
+</html>
